@@ -150,5 +150,6 @@ hexdump -C main.img
 3. **Ubicación de los Datos:** En la columna derecha de caracteres ASCII se puede visualizar el string "hello world" partiendo del offset `0x73`.
 4. **Firma Mágica:** Finalmente, los dos últimos bytes del sector de 512 bytes (offsets `0x1FE` y `0x1FF`) contienen los valores `55 aa`, cumpliendo con el requisito fundamental de la arquitectura x86 para que la BIOS reconozca la imagen como un MBR válido.
 
-## 5. Prueba de Éxito en Hardware Real
-Como demostración final de la correcta implementación del "Escudo BPB" y el linkeo exacto del programa, se muestra la ejecución exitosa del sector de arranque directamente desde un pendrive en hardware real: 
+## 5. Prueba de funcionamiento en hardware real
+Como demostración final de la correcta implementación del "Escudo BPB" y el linkeo exacto del programa, se muestra la ejecución exitosa del sector de arranque desde un pendrive en hardware real: 
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/c068cadc-acd1-4f85-9a5b-37319622522f" />
